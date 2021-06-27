@@ -1,0 +1,249 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.footer__topImg {
+    width: 100vw;
+    height: 30vh;
+    background-color: transparent;
+}
+
+.footer__topImg>img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
+
+.footer__topImg > h3 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer > button {
+    font-weight: 600;
+    font-size: 1.2rem;
+    width: 100vw;
+    height: 50px;
+    background-color: #3d019d;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+.footer>button:hover {
+    background-color: #290268;
+    border: none;
+    outline: none;
+}
+
+.footer__main, .footer__sub {
+    background-color: #140134;
+    width: 100vw;
+    height: 100%;
+    color: white;
+}
+
+.footer__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer__submain {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+    border-bottom: 0.5px solid #324358;
+}
+
+.footer__doc {
+    width: 165px;
+}
+
+.footer__doc > h4 {
+    padding-bottom: 20px;
+}
+
+.footer__doc > p {
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer__doc > p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer__img >img {
+    width: 80px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.footer__sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.footer__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__buttons > button {
+    background-color: #3d019d;
+    outline: none;
+    border: 1px solid rgb(153, 152, 152);
+    margin-right: 10px;
+    padding: 5px 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+}
+
+.footer__buttons>button:hover {
+    background-color: #290268;
+}
+
+.footer__middleButton {
+    padding-top: 8px !important;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .footer__submain {
+        width: 95%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 25px 0px;
+        border-bottom: 0.5px solid #324358;
+    }
+
+    .footer__doc {
+        width: 165px;
+        font-size: 12px;
+        padding: 0px 5px;
+    }
+
+    .footer__sub {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+
+    .footer__img>img {
+        width: 70px;
+        margin: 0 5px;
+    }
+
+    .footer__doc>h4 {
+        padding-bottom: 15px;
+    }
+
+    .footer__doc>p {
+        padding-bottom: 5px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .footer__buttons>button {
+        background-color: #232F3E;
+        font-size: 10px;
+        outline: none;
+        border: 1px solid rgb(153, 152, 152);
+        margin-right: 10px;
+        padding: 5px 10px;
+        padding-right: 10px;
+        margin-bottom: 3px;
+    }
+
+    .footer__middleButton {
+        padding: 7px 6px !important;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .footer__submain {
+        width: 95%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 25px 0px;
+        border-bottom: 0.5px solid #324358;
+    }
+    
+    .footer__doc {
+        width: 165px;
+        font-size: 12px;
+        padding: 0px 5px;
+    }
+
+    .footer__sub {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+
+    .footer__img>img {
+        width: 70px;
+        margin: 0 5px;
+    }
+    .footer__doc>h4 {
+        padding-bottom: 15px;
+    }
+
+    .footer__doc>p {
+        padding-bottom: 5px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .footer__buttons>button {
+        background-color: #232F3E;
+        font-size: 10px;
+        outline: none;
+        border: 1px solid rgb(153, 152, 152);
+        margin-right: 10px;
+        padding: 5px 10px;
+        padding-right: 10px;
+        margin-bottom: 3px;
+    }
+
+    .footer__middleButton {
+        padding: 7px 6px !important;
+    }
+}

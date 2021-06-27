@@ -1,0 +1,96 @@
+.checkoutProduct {
+  background-color: white;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.checkoutProduct__info {
+  padding-left: 20px;
+}
+
+.checkoutProduct__info > button {
+  background: #f0c14b;
+  border: 1px solid;
+  padding: 5px 10px;
+  border-radius: 2px;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  transition: all 0.5s ease-in-out;
+}
+
+.checkoutProduct__info>button:hover {
+  background:white;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #f0c14b;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.checkoutProduct__image {
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+  margin-top: 5px;
+}
+
+.checkoutProduct__rating {
+  display: flex;
+}
+
+.checkoutProduct__title {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .checkoutProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .checkoutProduct__info>button {
+    margin-bottom: 10px;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .checkoutProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .checkoutProduct__info>button {
+    margin-bottom: 10px;
+  }
+}

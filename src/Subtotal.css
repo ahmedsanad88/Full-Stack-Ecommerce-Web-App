@@ -1,0 +1,88 @@
+.subtotal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  background-color: #fff;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+}
+
+.subtotal__gift {
+  display: flex;
+  align-items: center;
+}
+
+.subtotal__gift > input {
+  margin-right: 5px;
+}
+
+.subtotal > button {
+  background: #f0c14b;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.subtotal>button:hover {
+  background:white;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #f0c14b;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .subtotal {
+    width: 90%;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .subtotal {
+    width: 90%;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+  }
+}

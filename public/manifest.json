@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Shopping App",
+  "name": "Sanad Shopping Website",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,6 +19,7 @@
     }
   ],
   "start_url": ".",
+  "display_override": ["window-control-overlay", "minimal-ui"],
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

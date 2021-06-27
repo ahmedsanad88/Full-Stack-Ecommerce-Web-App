@@ -1,0 +1,84 @@
+.checkout {
+  display: flex;
+  padding: 20px;
+  background-color: #E9EDED;
+  height: max-content;
+}
+
+.checkout__ad {
+  width: 98%;
+  margin-bottom: 10px;
+  filter: drop-shadow(0px 15px 0.7rem rgba(0, 0, 0,0.5));
+  border-radius: 5px;
+}
+
+.checkout__title {
+  margin-right: 10px;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.checkout__right{
+  min-height: 50vh;
+}
+
+.checkout__right{
+  background-image: url(./images/cart.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: content-box;
+  margin-left: 15px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .checkout {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    height: max-content;
+  }
+  .checkout__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .checkout {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    height: max-content;
+  }
+  .checkout__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

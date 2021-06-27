@@ -1,0 +1,171 @@
+/*  here is how you can divide the space on card elements */
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  max-height: 400px;
+  min-width: 100px;
+  box-shadow: inset 0 0px 20px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 0px 20px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: inset 0 0px 20px rgba(0, 0, 0, 0.6);
+  background-color: white;
+  z-index: 1;
+  transition: all 0.3 ease-in-out;
+}
+
+.product:hover {
+  animation: mymove 1s alternate linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes mymove {
+  0% {
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.3);
+  }
+  20% {
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  40% {
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.product__rating {
+  display: flex;
+}
+
+.product > button {
+  background: #f0c14b;
+  border: 1px solid;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  border-radius: 2px;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.product>button:hover {
+  background:white;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #f0c14b;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.product > img {
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+  /* margin-top: 15px; */
+}
+
+.product__info {
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.product__price {
+  margin-top: 5px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .product {
+    display: flex;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    max-height: 500px;
+    min-width: 100px;
+    background-color: white;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .product>img {
+    max-height: 150px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .product__info {
+    height: 190px;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .product {
+    display: flex;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    max-height: 500px;
+    min-width: 100px;
+    background-color: white;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+  }
+  .product>img {
+    max-height: 100px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .product__info {
+    height: 190px;
+  }
+}
