@@ -9,6 +9,7 @@ Full Stack E-commerce WebApp including many features like Modern design, custome
 ### Note:
 
     I used Firebase & firbase-Function & firebase-Cloud Firestore to host both front & back-end.
+    All App state for Users and Basket are handled by React Context to avoid using props as many as we can within our app.
 
 ### have quick look 😊;
 
@@ -18,6 +19,7 @@ Full Stack E-commerce WebApp including many features like Modern design, custome
 #### Main Tech Used for Project:
 
     React,
+    React Context,
     react-currency-format,
     react-router-dom,
     Express,
