@@ -16,6 +16,16 @@ Full Stack E-commerce WebApp including many features like Modern design, custome
 ![E-commerce 🛒🛒🛒](https://user-images.githubusercontent.com/57454543/123562787-2f703c80-d7b1-11eb-8df5-2c020c2e9197.gif)
 
 
+## Summary:
+
+### Full Stack E-commerce includes three main parts:
+### 1. design: 
+Website design inspired by Amazon design with additional touch to show my favorite colors and design from my view, to achieve that I was searching for performance and transferring from one page to another with smooth effect without unnecessary loading for every page which I found with React.js and React-router-dom.
+### 2. Data: 
+I used temporary static data for products but it's fully ready to be linked with dynamic data and API's, For Users, I used Firebase Authentication for a smooth customer experience for both Register and Login in addition to using the firebase function as a back-end which will handle all heavy work regarding products buying and orders and saved.
+### 3. functionality:
+As Trying to achieve the best customer experience with my website I'm always trying to keep some space for additional features and update existing ones. but The website site functionality builds according to a specific sequence of steps as the customer will have the option to Add & Remove and Buying any products but only in case of login to keep his records saved for further actions, and adding items for cart using React-Context as state manager for an easy and interactive site to update the cart notification and check-up and payments with all updates on real-time and Stripe is our payment hero as he is the responsible for final action and completing orders for clients with using Axios as first Guard for our API's.  I using only the test key for Stripe and to test the website you can use the 4242 cards as a test for full order experience.
+
 
 ### Technology Used (For Full Stack Web-App)
 
@@ -46,9 +56,6 @@ Full Stack E-commerce WebApp including many features like Modern design, custome
 
     Builds the app for production to the `build` folder.\
     It correctly bundles React in production mode and optimizes the build for the best performance.
-
-    The build is minified and the filenames include the hashes.\
-    Your app is ready to be deployed!
 
 ### All dependencies used and versions;
 #### 1. Front-end dependencies
